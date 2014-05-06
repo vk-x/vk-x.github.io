@@ -1,5 +1,5 @@
 ---
 layout: default
 title: vk-x
-current_language: en
+current_language: ru
 ---
