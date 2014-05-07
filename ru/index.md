@@ -15,6 +15,8 @@ current_language: ru
 <br/>
 <br/>
 
-<a href="/install" class="btn btn-default btn-lg">Установить {{ site.name }}</a>
+#### Установить:
+
+<button class="btn btn-default btn-lg" onclick="chrome.webstore.install()">Chromium</button>
 
 </center>
