@@ -25,6 +25,7 @@ current_language: en
 	class="btn btn-default btn-lg">Firefox</a>
 <a
 	href="http://extension.maxthon.com/detail/index.php?view_id=2461"
+	target="_blank"
 	class="btn btn-default btn-lg">Maxthon</a>
 <a
 	href="https://github.com/vk-x/vk-x/releases/download/v0.5.0/vk-x-0.5.0-opera.oex"
