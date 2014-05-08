@@ -36,8 +36,8 @@ current_language: ru
 		data-content="Только для Opera 12. Для Opera 15+ используйте версию для Chromium."
 		class="btn btn-default btn-lg">Opera</a>
 
-	<h3><small>Если Вы используете <b>Safari</b>, попробуйте <a href="http://vkopt.net">VkOpt</a>.</small></h3>
-	<h3><small>Свежая версия - <b>0.5.0</b></small></h3>
+	<h3><small>Если Вы используете Safari, попробуйте <a href="http://vkopt.net">VkOpt</a>.</small></h3>
+	<h3><small>Свежая версия - 0.5.0</small></h3>
 </div>
 
 </center>

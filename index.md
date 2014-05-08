@@ -36,8 +36,8 @@ current_language: en
 		data-content="Opera 12 only. For Opera 15+ use Chromium version."
 		class="btn btn-default btn-lg">Opera</a>
 
-	<h3><small>If you use <b>Safari</b> try <a href="http://vkopt.net">VkOpt</a>.</small></h3>
-	<h3><small>Latest version is <b>0.5.0</b></small></h3>
+	<h3><small>If you use Safari try <a href="http://vkopt.net">VkOpt</a>.</small></h3>
+	<h3><small>Latest version is 0.5.0</small></h3>
 </div>
 
 </center>
