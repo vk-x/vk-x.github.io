@@ -8,6 +8,8 @@
 		<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 		<link rel="stylesheet" href="/css/main.css">
 
+		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 		<!-- Chrome Web Store link for inline extension installation. See:
 		https://developer.chrome.com/webstore/inline_installation?hl=en#cws-link -->
 		<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/moicnldnafmkejcghffkhhnidjfhllcl">
@@ -17,10 +19,8 @@
 		{% if page.current_language == "ru" %}{% include header_ru.html %}{% endif %}
 		<div class="container">{{ content }}</div>
 
-		<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-		<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 		<script>
-			$( "[data-toggle=tooltip]" ).popover({ trigger: "hover", placement: "top" });
+			$( "[data-toggle=tooltip]" ).popover({ trigger: "hover", container: "body" });
 		</script>
 	</body>
 </html>
