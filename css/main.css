@@ -1,0 +1,4 @@
+.link-muted, .link-muted:hover, .link-muted:focus {
+	color: #999;
+	text-decoration: underline;
+}
