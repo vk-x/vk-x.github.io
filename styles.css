@@ -1,0 +1,97 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  min-width: 100%;
+  min-height: 100%;
+  text-align: center;
+  font-family: Open Sans,Helvetica Neue,sans-serif;
+  letter-spacing: -0.1px;
+  font-weight: 400;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+.logo {
+  position: relative;
+  z-index: 2;
+  margin: 30px 0 50px 0;
+  width: 128px;
+  height: 128px;
+}
+
+.bg-fill-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.bg-fill {
+  position: absolute;
+  z-index: 1;
+  transition-property: width, height, top, left;
+  transition-duration: 300ms;
+  transition-timing-function: linear;
+  width: 0;
+  height: 0;
+  top: 94px;
+  left: 50%;
+  background-color: #597da3;
+  border-radius: 50%;
+}
+
+.logo:hover~.bg-fill-wrapper>.bg-fill {
+  transition-timing-function: ease-out;
+  transition-duration: 400ms;
+  top: -100%;
+  left: -100%;
+  width: 300%;
+  height: 300%;
+}
+
+.logo:hover~section {
+  color: #fff;
+}
+
+.logo:hover~section, .logo:hover~section .button {
+  transition-duration: 100ms;
+  transition-delay: 0ms;
+}
+
+.logo:hover~section .button {
+  background-color: #fff;
+  color: #597da3;
+}
+
+section {
+  position: relative;
+  z-index: 2;
+  transition-property: color;
+  transition-duration: 200ms;
+  transition-delay: 200ms;
+  transition-timing-function: linear;
+  padding: 2em 1em;
+  font-size: 20px;
+}
+
+section a {
+  color: inherit;
+}
+
+section .button {
+  transition-property: color, background-color;
+  transition-duration: 200ms;
+  transition-delay: 200ms;
+  background-color: #597da3;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  padding: 18px;
+  color: #fff;
+}
+
+section .button:hover {
+  background-color: #678eb4;
+}

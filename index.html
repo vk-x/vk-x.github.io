@@ -1,72 +1,31 @@
----
-layout: default
-title: vk-x
-current_language: en
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" href="logo.png">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/ihbjipfpdnlccojhblaibcbolejpbfnj">
+	<title>vk-x — extension for vk.com that makes life easier</title>
+</head>
+<body>
 
-<center>
-	<img src="/logo.png" alt="{{ site.name }} logo">
+	<img class="logo" src="logo.png" alt="vk-x">
 
-	<h2 style="margin: 50px 0">Extension for <a href="//vk.com" target="_blank">vk.com</a> inspired by and based on <a href="http://vkopt.net" target="_blank">VkOpt</a>.</h2>
+	<div class="bg-fill-wrapper">
+		<div class="bg-fill"></div>
+	</div>
 
-	<script>
-		function installFirefoxExtension( e ) {
-			var params = {
-				"{{ site.name }}": {
-					URL: "https://github.com/vk-x/vk-x-legacy/releases/download/v0.5.0/vk-x-0.5.0-firefox.xpi",
-					IconURL: "https://raw.githubusercontent.com/vk-x/vk-x-legacy/master/source/meta/firefox/icon.png",
-					Hash: "sha1:a2b7de6b435422998b37e8ad1950943e88f7beeb"
-				}
-			};
-			InstallTrigger.install( params );
-		}
-	</script>
+	<section>
+		<strong>vk-x</strong> — Chrome extension for new.vk.com
+	</section>
 
-	<h4>
-		Install for
-		<div class="btn-group text-left" id="install-wrap">
-			<a class="btn btn-default btn-lg dropdown-toggle" data-toggle="dropdown">
-				<span class="caret"></span>
-			</a>
-			<ul class="dropdown-menu" role="menu" id="install-options">
-				<li><a
-					href="javascript:chrome.webstore.install()"
-					id="chromium">Chromium</a></li>
-				<li><a
-					href="javascript:installFirefoxExtension()"
-					id="firefox">Firefox</a></li>
-				<li><a
-					href="http://extension.maxthon.com/detail/index.php?view_id=2461"
-					target="_blank"
-					id="maxthon">Maxthon</a></li>
-				<li><a
-					href="http://vk-x.herokuapp.com/opera"
-					data-toggle="tooltip"
-					data-content="Opera 12 only. For Opera 15+ use Chromium version."
-					id="opera">Opera</a></li>
-			</ul>
-		</div>
-	</h4>
+	<section>
+		<input type="button" class="button" value="Install from Chrome Web Store" onclick="chrome.webstore.install()">
+	</section>
 
-	<script>
-		var ua = navigator.userAgent.toLowerCase(), currentBrowser;
-		if ( ua.indexOf( "opera" ) > -1 ) currentBrowser = "opera"
-		if ( ua.indexOf( "firefox" ) > -1 ) currentBrowser = "firefox"
-		if ( ua.indexOf( "maxthon" ) > -1 ) currentBrowser = "maxthon"
-		if ( ua.indexOf( "chrom" ) > -1 ) currentBrowser = "chromium"
+	<section>
+		<a href="https://new.vk.com/vkx_community">community</a> | <a href="https://github.com/vk-x/vk-x">source</a> | <a href="https://github.com/deltaidea">deltaidea</a> | <a href="/ru">ru</a>
+	</section>
 
-		$( "#install-options #" + currentBrowser )
-			.prependTo( "#install-wrap" )
-			.addClass( "btn btn-default btn-lg" );
-	</script>
-
-	<br>
-
-	<hr>
-	<p class="text-muted">
-		v0.5.0 alpha |
-		<a class="link-muted" href="https://github.com/vk-x/vk-x-legacy" target="_blank">source</a> |
-		<a class="link-muted" href="https://github.com/deltaidea" target="_blank">deltaidea</a> |
-		<a class="link-muted" href="https://js.org" target="_blank">dns.js.org</a>
-	</p>
-</center>
+</body>
+</html>
